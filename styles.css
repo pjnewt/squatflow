@@ -1,0 +1,25 @@
+body {
+background:#0f172a;
+color:white;
+font-family:Arial;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+margin:0;
+}
+.app{
+text-align:center;
+}
+button{
+padding:12px;
+margin-top:10px;
+border:none;
+border-radius:10px;
+background:#38bdf8;
+}
+input{
+display:block;
+margin:10px auto;
+padding:10px;
+}
