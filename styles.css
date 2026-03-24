@@ -1,0 +1,57 @@
+*{box-sizing:border-box}html,body{margin:0;padding:0;background:#0b1220;color:#eef2ff;font-family:Inter,system-ui,Arial,sans-serif}
+body{min-height:100vh}
+.app-shell{max-width:1080px;margin:0 auto;padding:18px}
+.topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+h1{margin:2px 0 0;font-size:2rem}
+.eyebrow{font-size:.8rem;color:#7dd3fc;text-transform:uppercase;letter-spacing:.08em}
+.top-actions{display:flex;gap:8px}
+.screen{display:none}
+.screen.active{display:block}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+.card{background:#111827;border:1px solid #1f2937;border-radius:24px;padding:16px;box-shadow:0 10px 30px rgba(0,0,0,.22);margin-bottom:14px}
+.primary{border-color:#155e75}
+.section-title{font-size:.86rem;text-transform:uppercase;letter-spacing:.08em;color:#93c5fd;margin-bottom:12px}
+.row,.workout-head,.button-row,.calc-row,.mode-row{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.big{font-size:1.35rem;font-weight:700}
+.xl{font-size:1.7rem;font-weight:800}
+.muted{color:#94a3b8;font-size:.85rem}
+.pill{background:#082f49;color:#bae6fd;padding:8px 12px;border-radius:999px;font-size:.9rem}
+.pill.mini{padding:6px 10px;font-size:.85rem}
+.exercise-note,.coach-copy{margin-top:10px;color:#cbd5e1;line-height:1.45}
+.exercise-grid,.programme-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.exercise-card{background:#0f172a;border:1px solid #1f2937;border-radius:20px;overflow:hidden;display:flex;flex-direction:column}
+.exercise-illus{height:132px;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#12334f,#0f172a);font-size:3rem}
+.exercise-body{padding:14px;display:grid;gap:10px}
+.exercise-name{font-size:1.1rem;font-weight:800}
+.exercise-meta{color:#cbd5e1;font-size:.9rem;line-height:1.4}
+.programme-item{background:#0f172a;border:1px solid #1f2937;border-radius:18px;padding:14px;display:grid;gap:8px}
+.programme-item.current{border-color:#22d3ee;box-shadow:0 0 0 1px #22d3ee inset}
+.programme-item.locked{opacity:.7}
+.programme-item.done{border-color:#16a34a}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+label span{display:block;font-size:.85rem;color:#cbd5e1;margin-bottom:6px}
+input,select,button{font:inherit}
+input,select{width:100%;padding:12px 14px;border-radius:14px;background:#0f172a;color:#e5e7eb;border:1px solid #334155}
+button{border:none;border-radius:16px;padding:12px 16px;background:#38bdf8;color:#082f49;font-weight:800;cursor:pointer}
+button.secondary{background:#1e293b;color:#e5e7eb;border:1px solid #334155}
+button.ghost{background:transparent;color:#bae6fd;border:1px solid #155e75}
+button:disabled{opacity:.55;cursor:not-allowed}
+.calc-card,.live-card{flex:1;min-width:130px;background:#0f172a;border:1px solid #1f2937;border-radius:20px;padding:12px}
+.metric{font-size:1.5rem;font-weight:800}
+.live-grid,.summary-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.timer{font-size:2.5rem;font-weight:900;letter-spacing:.03em}
+.progress-wrap{margin:14px 0 12px;height:12px;background:#0f172a;border-radius:999px;overflow:hidden;border:1px solid #1f2937}
+.progress-bar{height:100%;width:0%;background:linear-gradient(90deg,#22d3ee,#38bdf8)}
+.coaching{margin-top:10px;color:#dbeafe;line-height:1.45;min-height:42px}
+.weekly-list{display:grid;gap:8px}
+.weekly-item{display:flex;justify-content:space-between;gap:10px;padding:10px 12px;border-radius:14px;background:#0f172a;border:1px solid #1f2937}
+.log{display:grid;gap:8px;max-height:280px;overflow:auto}
+.log-item{padding:10px 12px;border-radius:14px;background:#0f172a;border:1px solid #1f2937;color:#dbeafe}
+.flag{margin-top:12px;padding:10px 12px;border-radius:14px;font-weight:700}
+.flag.ok{background:#052e16;color:#bbf7d0}
+.flag.warn{background:#451a03;color:#fdba74}
+.sens-inline{display:flex;align-items:center;gap:10px}
+.sens-inline input[type="range"]{flex:1;padding:0;background:transparent;border:none}
+.small-note{font-size:.84rem;color:#cbd5e1}
+.inline-actions{display:flex;gap:8px;flex-wrap:wrap}
+@media (max-width:700px){.form-grid,.live-grid,.summary-grid,.exercise-grid,.programme-list{grid-template-columns:1fr}.timer{font-size:2.1rem}.app-shell{padding:12px}}
