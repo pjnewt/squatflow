@@ -1,0 +1,22 @@
+{
+  "name": "SquatFlow",
+  "short_name": "SquatFlow",
+  "description": "Home-first squat training coach with voice prompts, timing, rep counting, volume tracking and weekly summaries.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0b1220",
+  "theme_color": "#0f172a",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
